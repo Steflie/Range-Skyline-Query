@@ -1,0 +1,11 @@
+A list of the steps followed to complete the Thesis:
+
+* Refactor the implementation of the BBS and RTree from Python 2.x to 3.x
+* Refactor the implementation of the BBS and RTree to meet the docstring conventions.
+* Change the priority function in the module mbr.py to meet the new way of calculating the prioriry
+
+*Produce data files
+*Produce query files
+*Add a log system
+
+*Add a GUI with Tkinter

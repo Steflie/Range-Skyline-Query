@@ -1,0 +1,29 @@
+######################################
+
+In order to have the Rtree module:
+---------------------------------
+
+run: pip install Rtree
+
+, which is a project from the pypi.org
+
+in case you can't import the rtree module, import rtree causes an error: OSError: Could not find libspatialindex_c library file
+
+then follow the follow commands:
+
+sudo apt-get install automake
+sudo apt-get install libtool
+sudo apt-get install pkg-config
+curl -L https://github.com/libspatialindex/libspatialindex/archive/1.8.5.tar.gz | tar xz
+cd libspatialindex-1.8.5/
+./autogen.sh
+./configure
+make
+sudo make install
+sudo ldconfig
+#####################################
+
+
+To run the generators use :
+g++ generators.cpp -o generators -lm -ltinfo -lncurses
+./generators
